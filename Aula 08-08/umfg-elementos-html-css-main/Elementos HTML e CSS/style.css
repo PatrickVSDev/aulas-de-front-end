@@ -1,0 +1,43 @@
+p{
+    color: red
+}
+
+.custom-text {
+    color: purple;
+    font-size: italic;
+}
+
+.highlight {
+    background-color: yellow;
+    padding: 5px;
+}
+
+#text-id{
+    color: blue;
+    font-size: bold;
+}
+
+.exemplo-fonte {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.exemplo-tamanho-texto-pixel {
+    font-size: 20px;
+}
+
+.exemplo-palavra-chave {
+    font-size: 40px;
+}
+
+.exemplo-familia-fontes {
+    font-family: "Arial", sans-serif;
+}
+
+.exemplo-fonte-italico {
+    font-style: italic;
+}
+
+.exemplo-fonte-negrito {
+    font-weight: bold;
+}

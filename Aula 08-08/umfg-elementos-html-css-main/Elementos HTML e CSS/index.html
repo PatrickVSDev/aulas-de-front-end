@@ -1,0 +1,85 @@
+<!-- DOCTYPE é uma informação utilizada para que o navegador que for interpretar nosso documento entenda que ele é do tipo HTML -->
+<!DOCTYPE html>
+
+<!-- 
+    A tag html simboliza o início do nosso código HTML
+    Não se esqueçam que toda tag de abertura precisa de uma tag de fechamento. Ex: <html> ... </html>
+ -->
+<html lang="pt-br">
+    <head>
+        <!-- A tag meta é utilizada para definir informações de caracteres que nosso documento possuirá -->
+        <meta charset="UTF-8">
+        <!-- A tag title é utilizada para definir o título da página e aparecerá na aba do nosso navegador -->
+        <title>Elementos HTML</title>
+
+        <link rel="stylesheet" href="style.css">
+        <!-- 
+            A tag style é utilizada para definir estilos para nosso documento.
+            Aqui temos um exemplo de estilo incorporado, ou seja, o estilo está dentro do próprio documento em uma tag style.
+        -->
+        <style>
+            p {
+                color: burlywood;
+            }
+        </style>
+    </head>
+
+    <!-- 
+        Tag body é utilizada para definir o corpo do nosso documento, ou seja, 
+        toda informação que será visual na nossa tela do website 
+    -->
+    <body>
+
+        <!-- Utilização de tags de títulos h1, h2, ..., h6 e demonstrando seu comportamento em tela -->
+        <h1>Título Principal - Título 1</h1>
+
+        <!-- Exemplo de texto puro sem nenhuma formatação ou utilização de tag -->
+        Texto puro sem utilização de alguma tag.
+        <br /> <!-- tag orfã (não tem par de fechamento, ela fecha no mesmo local que abre) para realizar quebra de linha -->
+        Segunda linha sem utilização de alguma tag.
+
+        <!-- Tag de parágrafo para demonstrar o comportamento em tela e a diferença comparado ao texto anterior -->
+        <p>Descrição de utilização da tag p.</p>
+        <p>Segunda linha.</p>
+
+        <hr /> <!-- tag orfã para realizar uma linha horizontal -->
+
+        <h2>Título h2</h2>
+        <!-- Exemplo de utilização de tags de formatação de texto. Verifique o comportamento na sua tela do website -->
+        <p>Texto <em>feito</em> apenas para <strong>teste</strong> de outros elementos.</p>
+
+        <hr />
+
+        <h3>Título h3</h3>
+        <!-- 
+            Exemplo de utilização de estilo inline, ou seja, o estilo está dentro da própria tag.
+            Ela é a que tem maior prioridade entre as três formas de utilização de estilo.
+            Sendo assim, verificamos que o estilo definido na tag style não está sendo aplicado nessa linha.
+        -->
+        <p style="color: blue;">Texto para teste de mudança de cor</p>
+
+        <!-- Utilização de tag span que demonstra seu comportamento inline ao agrupar um bloco de texto -->
+        <p>Texto <span style="color: green;">para</span> teste de mudança de cor</p>
+
+        <h4>Título h4</h4>
+
+        <div class="custom-text">Texto com classe custom-text</div>
+
+        <p>Texto com <div class="highlight">classe highlight</div></p>
+
+        <p id="text-id">Texto 1 com utilização de seletor id</p>
+
+        <hr />
+        <h5>Título h5</h5>
+
+        <div class="exemplo-fonte">Fontes:</div>
+
+        <p class="exemplo-fonte">Este é um exemplo de tamanho de fonte utilizando pixels.</p>
+        <p class="exemplo-tamanho-texto-pixel">Este é um exemplo de tamanho de fonte utilizando palavras-chaves.</p>
+        <p class="">Este é um exemplo de tamanho de fonte personalizada.</p>
+        <p class="">Este é um exemplo de tamanho de fonte em italico.</p>
+        <p class="">Este é um exemplo de tamanho de fonte em negrito.</p>
+
+        <h6>Título h6</h6>
+    </body>
+</html>

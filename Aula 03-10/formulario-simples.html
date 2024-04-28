@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulário de Contato</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-image: url('https://i.pinimg.com/originals/cb/59/e1/cb59e1a7bc188a8c1aacd2ea05622777.gif');
+      background-size: cover;
+      background-position: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+
+    form {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    .espacamento-checkbox {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <fieldset>
+    <legend>Formulário de Cadastro de Usuário</legend>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui" required>
+      <br /><br />
+    
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu email aqui" required>
+      <br /><br />
+    
+      <label>Lista de departamentos:</label>
+      <br /><br />
+      
+      <div class="espacamento-checkbox">
+        <input type="checkbox" id="esporte" name="esporte" value="1">
+        <label for="esporte">Esporte</label>
+      </div>
+    
+      <div class="espacamento-checkbox">
+        <input type="checkbox" id="tecnologia" name="tecnologia" value="2">
+        <label for="tecnologia">Tecnologia</label>
+      </div>
+    
+      <div class="espacamento-checkbox">
+        <input type="checkbox" id="moda" name="moda" value="3">
+        <label for="moda">Moda</label>
+      </div>
+      <br /><br />
+    
+      <label>Como você avalia nosso serviço?</label>
+      <input type="radio" id="avaliacao1" name="avaliacao" value="1"><label for="avaliacao">1</label>
+      <input type="radio" id="avaliacao2" name="avaliacao" value="2"><label for="avaliacao">2</label>
+      <input type="radio" id="avaliacao3" name="avaliacao" value="3"><label for="avaliacao">3</label>
+      <input type="radio" id="avaliacao4" name="avaliacao" value="4"><label for="avaliacao">4</label>
+      <input type="radio" id="avaliacao5" name="avaliacao" value="5"><label for="avaliacao">5</label>
+      <br /><br />
+
+      <input type="checkbox" id="termos" name="termos" required>
+      <label for="termos">Aceitar os termos de condições</label>
+      <br /><br />
+      
+    
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem aqui" required></textarea>
+    
+      <input type="submit" value="Enviar">
+    </form>
+  </fieldset>
+</body>
+</html>

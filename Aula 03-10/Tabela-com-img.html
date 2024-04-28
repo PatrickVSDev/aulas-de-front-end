@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .example-table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #333; /* Borda da tabela */
+            border-style: double;
+        }
+
+        .example-table th, .example-table td {
+            border: 1px double black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .image-cell {
+            text-align: center;
+        }
+
+        .image-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .text {
+            margin-right: 10px;
+            text-align: left;
+        }
+
+
+    </style>
+</head>
+<body>
+    <table class="example-table">
+        <tr>
+            <th>Produto</th>
+            <th colspan="2">Detalhes</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Camisa</td>
+            <td>Cor</td>
+            <td>Material</td>
+            <td rowspan="2">R$ 29,99</td>
+        </tr>
+        <tr>
+            <td>Azul</td>
+            <td>Algodão</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="image-cell">
+                <div class="image-container">
+                    <p class="text">Camisa do melhor time do Brasil!</p>
+                    <img src="https://s3.amazonaws.com/images.ecwid.com/images/15913120/1130791177.jpg" alt="Camisa" width="150">
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
